@@ -41,5 +41,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        Gson gson = new Gson();
     }
 }
