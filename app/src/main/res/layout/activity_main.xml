@@ -11,25 +11,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/greeting"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="200dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/responseEditText"
+        android:id="@+id/nameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/name_hint"
         app:layout_constraintTop_toBottomOf="@+id/textBox"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/response2EditText"/>
+        app:layout_constraintRight_toRightOf="parent" />
     <EditText
-        android:id="@+id/response2EditText"
+        android:id="@+id/colorEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/color_hint"
-        app:layout_constraintTop_toBottomOf="@+id/textBox"
-        app:layout_constraintLeft_toRightOf="@+id/responseEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+        android:id="@+id/hobbyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hobby_hint"
+        app:layout_constraintTop_toBottomOf="@+id/colorEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
     <Button
         android:id="@+id/clickButton"
@@ -38,7 +46,7 @@
         android:text="@string/click_button"
         android:textColor="#318214"
         android:textAllCaps="true"
-        app:layout_constraintTop_toBottomOf="@+id/responseEditText"
+        app:layout_constraintTop_toBottomOf="@+id/hobbyEditText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

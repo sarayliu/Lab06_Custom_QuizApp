@@ -15,13 +15,13 @@ public class Player {
     public Player(){
         this.name = "Unknown Player";
         this.score = 0;
-        this.info = Arrays.asList("Unknown birthday", "Unknown hobby");
+        this.info = Arrays.asList("Unknown color", "Unknown hobby");
     }
 
-    public Player(String name, String birthday, String hobby){
+    public Player(String name, String color, String hobby){
         this.name = name;
         this.score = 0;
-        this.info = Arrays.asList(birthday, hobby);
+        this.info = Arrays.asList(color, hobby);
     }
 
     @Override
@@ -36,8 +36,8 @@ public class Player {
         return name;
     }
 
-    public int getScore()
+    public void setScore(int newScore)
     {
-        return score;
-    }
+        score = newScore;
+    };
 }
