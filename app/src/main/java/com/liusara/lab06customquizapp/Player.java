@@ -16,7 +16,7 @@ public class Player {
         this.info = Arrays.asList("Unknown color", "Unknown hobby");
     }
 
-    public Player(String name, String color, String hobby){
+    Player(String name, String color, String hobby){
         this.name = name;
         this.score = 0;
         this.info = Arrays.asList(color, hobby);
