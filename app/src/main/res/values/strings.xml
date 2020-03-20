@@ -5,4 +5,6 @@
     <string name="click_button">Submit</string>
     <string name="color_hint">State your favorite color?</string>
     <string name="hobby_hint">What is your favorite hobby?</string>
+    <string name="play_button">Play</string>
+    <string name="players_button">See Players</string>
 </resources>
