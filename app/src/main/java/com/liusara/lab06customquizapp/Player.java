@@ -26,7 +26,7 @@ public class Player {
     @NonNull
     public String toString()
     {
-        return "Player [name=" + name + ", score=" + score + ", info=" + info + "]";
+        return name + ": " + score + " points\nFavorite color: " + info.get(0) + "; Favorite hobby: " + info.get(1);
     }
 
     public String getName()

@@ -7,4 +7,6 @@
     <string name="hobby_hint">What is your favorite hobby?</string>
     <string name="play_button">Play</string>
     <string name="players_button">See Players</string>
+    <string name="home_button">Home</string>
+    <string name="answer_hint">Your answer</string>
 </resources>

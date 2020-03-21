@@ -55,10 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 Player player = new Player(nameText.getText().toString(), colorText.getText().toString(), hobbyText.getText().toString());
                 Gson gson = new Gson();
                 Set<String> currentPlayers = sharedPreferences.getStringSet("storedPlayers", new HashSet<String>());
+                System.out.println("Before: " + sharedPreferences.getStringSet("storedPlayers", new HashSet<String>()));
                 currentPlayers.add(gson.toJson(player));
+                editor.clear();
                 editor.putStringSet("storedPlayers", currentPlayers);
                 editor.apply();
-                System.out.println(gson.toJson(player));
+                System.out.println("Added " + gson.toJson(player));
+                System.out.println("After: " + sharedPreferences.getStringSet("storedPlayers", new HashSet<String>()));
             }
         });
 

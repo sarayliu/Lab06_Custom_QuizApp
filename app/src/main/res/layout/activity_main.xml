@@ -22,7 +22,8 @@
         android:hint="@string/name_hint"
         app:layout_constraintTop_toBottomOf="@+id/textBox"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:autofillHints="" />
     <EditText
         android:id="@+id/colorEditText"
         android:layout_width="wrap_content"
@@ -30,7 +31,8 @@
         android:hint="@string/color_hint"
         app:layout_constraintTop_toBottomOf="@+id/nameEditText"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        android:autofillHints="" />
     <EditText
         android:id="@+id/hobbyEditText"
         android:layout_width="wrap_content"
@@ -38,7 +40,8 @@
         android:hint="@string/hobby_hint"
         app:layout_constraintTop_toBottomOf="@+id/colorEditText"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        android:autofillHints="" />
     <Button
         android:id="@+id/clickButton"
         android:layout_width="wrap_content"
