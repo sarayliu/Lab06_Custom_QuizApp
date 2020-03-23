@@ -13,72 +13,42 @@
         android:text="@string/home_button"
         android:textColor="#318214"
         android:textAllCaps="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
-    <TextView
-        android:id="@+id/playerTextView"
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:textSize="25sp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/homeButton"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-    <TextView
-        android:id="@+id/questionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/playerTextView" />
-    <EditText
-        android:id="@+id/answerEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/answer_hint"
-        app:layout_constraintTop_toBottomOf="@id/questionTextView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:autofillHints=""
-        android:inputType="number" />
+        android:id="@+id/guidelineV"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"/>
     <Button
-        android:id="@+id/submitAnswerButton"
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submit_answer_button"
+        android:text="@string/add_button"
         android:textColor="#318214"
         android:textAllCaps="true"
-        app:layout_constraintTop_toBottomOf="@id/answerEditText"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-    <TextView
-        android:id="@+id/scoreboardTextView"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guidelineV"/>
+    <Button
+        android:id="@+id/subtractButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/scoreboard"
-        android:textSize="20sp"
-        android:layout_marginEnd="225dp"
-        app:layout_constraintTop_toBottomOf="@id/submitAnswerButton"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="375dp"
+        android:text="@string/subtract_button"
+        android:textColor="#318214"
+        android:textAllCaps="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
-        <TextView
-            android:id="@+id/scoreboard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="">
-        </TextView>
-    </ScrollView>
+        app:layout_constraintLeft_toRightOf="@id/guidelineV"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

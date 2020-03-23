@@ -21,7 +21,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String PLAYERS_INFO = "com.liusara.lab06customquizapp.PLAYER_INFO";
     public static final String PLAYER_OBJECT = "com.liusara.lab06customquizapp.PLAYER_OBJECT";
     TextView displayText;
     Button submitButton;
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     player = new Player();
                     System.out.println("Default constructor initiated");
-                    displayString = "Welcome Anonymous Player! Your information will not be recorded.";
+                    displayString = "Welcome Anonymous Player!";
                     displayText.setText(displayString);
                 }
                 else
@@ -102,14 +101,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent playIntent = new Intent(getApplicationContext(), PlayLayout.class);
-                Set<String> currentPlayers = sharedPreferences.getStringSet("storedPlayers", new HashSet<String>());
-                String[] playersArray = new String[currentPlayers.size()];
-                int index = 0;
-                for(String playerInfo:currentPlayers)
-                {
-                    playersArray[index++] = playerInfo;
-                }
-                playIntent.putExtra(PLAYERS_INFO, playersArray);
                 System.out.println(player.toString());
                 gson = new Gson();
                 playIntent.putExtra(PLAYER_OBJECT, gson.toJson(player));

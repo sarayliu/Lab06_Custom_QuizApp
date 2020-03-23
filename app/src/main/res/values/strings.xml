@@ -11,4 +11,7 @@
     <string name="answer_hint">Your answer</string>
     <string name="submit_answer_button">Submit Answer</string>
     <string name="scoreboard">Scoreboard:</string>
+
+    <string name="add_button">Practice Addition</string>
+    <string name="subtract_button">Practice Subtraction</string>
 </resources>
