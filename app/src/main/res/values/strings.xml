@@ -10,4 +10,5 @@
     <string name="home_button">Home</string>
     <string name="answer_hint">Your answer</string>
     <string name="submit_answer_button">Submit Answer</string>
+    <string name="scoreboard">Scoreboard:</string>
 </resources>

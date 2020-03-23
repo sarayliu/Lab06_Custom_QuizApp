@@ -10,8 +10,8 @@ public class Player {
     private Integer score;
     private List<String> info;
 
-    public Player(){
-        this.name = "Unknown Player";
+    Player(){
+        this.name = "Anonymous Player";
         this.score = 0;
         this.info = Arrays.asList("Unknown color", "Unknown hobby");
     }
@@ -29,12 +29,22 @@ public class Player {
         return name + ": " + score + " points\nFavorite color: " + info.get(0) + "; Favorite hobby: " + info.get(1);
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setScore(int newScore)
+    int getScore()
+    {
+        return score;
+    }
+
+    List<String> getInfo()
+    {
+        return info;
+    }
+
+    void setScore(int newScore)
     {
         score = newScore;
     };
